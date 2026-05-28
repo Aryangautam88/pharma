@@ -10,30 +10,49 @@ const cards = [
     title: "Tap to Reveal 💌",
     image:
       "https://i.pinimg.com/736x/b3/79/7f/b3797f6ff841654fe4f9fbc888eb6f6e.jpg",
-    text: `I know maine tumhe bahot hurt kiya... 
-          aur uska mujhe sach me regret hai.bhot hi jaada 
-          Tum mere liye bahot special ho ❤️`,
+
+    text: `I know maine tumhe hurt kiya...
+aur shayad utna jitna kabhi nahi karna chahiye tha.
+
+But trust me...
+har din bas yehi sochta hu ki kaash sab thik kar paau 🥺
+
+Tum sirf meri life ka part nahi ho...
+tum meri happiness ho ❤️`,
   },
 
   {
     title: "One Promise 🌸",
     image:
       "https://i.pinimg.com/originals/6d/0c/03/6d0c035e30176346fbd74663535f704c.gif",
-    text: `Mujhe pata hai maine galti ki...
+
+    text: `Mujhe pata hai galti meri thi...
 but I promise main better banunga.
-taaki tujhe ab aange se koi ase ceeje na sehni pade
-Humne jo future plan kiya tha...
-wo sab waise hi hoga 🥺💕`,
+
+Main waapas wahi smile dekhna chahta hu
+jo sirf meri wajah se aati thi 💕
+
+Humne jo future imagine kiya tha...
+main abhi bhi usse utna hi seriously leta hu.
+
+Bas ek chance aur de do...
+iss baar tumhe complain ka mauka nahi dunga 🥹❤️`,
   },
 
   {
     title: "Cute Sorry 🥹",
     image:
       "https://i.pinimg.com/736x/47/4d/a9/474da95baa93a2ebf1e2b318aea209b9.jpg",
-    text: `Please gussa mat raho cutie 😭❤️
-Tumhare bina sab boring lagta hai.
-yaar me bhot ase bhooto jaise akela ho jaata hu jaise kisi ne muje store room me band kr diya ho
-Ek baar maaf kardo na...
+
+    text: `Please ab gussa chhod do na cutie 😭❤️
+
+Tumhare bina sab ajeeb sa lagta hai...
+din bhi aur main bhi.
+
+Sach me...
+tum nahi hoti to sab empty empty lagta hai 🥺
+
+Ek baar maaf kardo...
 warna main officially sad potato ban jaunga 🥔💔`,
   },
 ];
@@ -49,9 +68,9 @@ export default function Pharma() {
 
   const [opened, setOpened] =
     useState([]);
-  
-    const [showRoyalPage, setShowRoyalPage] =
-  useState(false);
+
+  const [showRoyalPage, setShowRoyalPage] =
+    useState(false);
 
   useEffect(() => {
 
@@ -231,7 +250,7 @@ export default function Pharma() {
 
         </div>
 
-      ) : !showRoyalPage ?  (
+      ) : !showRoyalPage ? (
 
         <div className="cards-section">
 
@@ -369,7 +388,7 @@ export default function Pharma() {
 
           {/* LOVE LETTER */}
 
-       </div>
+        </div>
 
       ) : (
 
@@ -411,41 +430,83 @@ export default function Pharma() {
 
             <p>
               Sach bolu...
-              mujhe pata hai maine
-              bahot badi galti ki.
-              Shayad itna hurt kabhi
-              nahi karna chahiye tha.
+              shayad words kabhi explain hi
+              nahi kar paayenge ki mujhe
+              kitna regret hai.
+
+              Maine sirf galti nahi ki...
+              maine us insaan ko hurt kiya
+              jo meri life ka sabse
+              beautiful part hai.
             </p>
 
             <p>
-              Aur jab mujhe sorry bolna
-              chahiye tha...
-              tab bhi main perfect nahi
-              ho paya.
+              Aur sabse zyada dard iss baat ka hai
+              ki jab tujhe meri zarurat thi...
+              tab main waise tere saath nahi tha
+              jaise hona chahiye tha.
+
+              Lekin believe me...
+              mere intentions kabhi bhi tujhe
+              hurt karne ke nahi the.
+
+              Main bas tujhe itna special,
+              itna loved feel karana chahta hu
+              ki tujhe kabhi ye doubt hi na ho
+              ki tu meri duniya hai ❤️
             </p>
 
             <p>
-              But ek cheez kabhi change
-              nahi hogi —
+              Aur ek cheez...
+              chahe kitni bhi fights ho,
+              kitni bhi misunderstandings ho,
+              ek cheez kabhi change nahi hogi —
+
               meri feelings tere liye.
+
+              Tu sirf meri girlfriend nahi hai...
+              tu meri peace hai,
+              meri comfort place hai,
+              meri favorite person hai ✨
             </p>
 
             <p>
-              Teri hasi,
-              teri baatein,
-              tera gussa,
-              tera pyaar...
-              sab meri life ka part ban
-              chuka hai 💖
+              Hamari late night talks,
+              random long drives,
+              movies dekhte waqt tera
+              mere shoulder pe so jaana,
+              aur college me tere saath
+              bitaya hua har ek moment...
+
+              sach me meri life ka
+              sabse beautiful part hai ❤️
             </p>
 
             <p>
-              Mujhe bas ek chance chahiye
-              taaki main tujhe woh
-              happiness de saku
-              jo tu deserve karti hai ✨
+              Aur shayad isi liye jab
+              humare beech kuch galat hota hai
+              na...
+              toh sab empty sa lagne lagta hai.
+
+              Mujhe bas ek mauka chahiye...
+              taaki main tujhe woh pyaar,
+              woh care,
+              woh happiness feel kara saku
+              jo tu sach me deserve karti hai ✨
             </p>
 
+            <p>
+              Maine tujhe jitna hurt kiya hai...
+              usse 100 guna zyada
+              pyaar dena chahta hu.
+
+              Main tere saath aur memories
+              banana chahta hu...
+              aur bhi long drives,
+              aur bhi movie nights,
+              aur bhi stupid cute moments,
+              jaha sirf tu aur main ho 💖
+            </p>
             <div className="signature">
               I love you the most,
               babu 🌸
@@ -475,9 +536,19 @@ export default function Pharma() {
 
               <p>
                 Please forgive me...
-                You mean everything to
-                me 🥺
-                Like you are everything to me.
+
+                Kyuki sach me,
+                tu sirf mera pyaar nahi hai...
+                tu meri happiness hai,
+                meri peace hai,
+                meri safe place hai 🥺❤️
+
+                Aur tere bina sab adhura sa lagta hai.
+
+                Main bas itna chahta hu
+                ki ek din tu mujhe dekh ke
+                proudly bole —
+                “ye mera banda hai” ✨
               </p>
 
             </motion.div>

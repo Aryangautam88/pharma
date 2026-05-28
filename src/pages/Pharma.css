@@ -412,6 +412,10 @@ html{
   .opened-card p{
     font-size:1rem;
   }
+  .final-message{
+    margin-top: 30px;
+    margin-left: -5px ;
+  } 
 }
 
 .top-images-wrapper{
@@ -421,6 +425,7 @@ html{
   gap:25px; /* gap between images */
   margin-bottom:25px;
   flex-wrap:wrap;
+  margin-top: 60px;
 }
 
 .top-images-wrapper img{
@@ -429,7 +434,8 @@ html{
   object-fit:cover;
   border-radius:25px;
 
-  box-shadow:0 0 25px #ff4fd8;
+  /* box-shadow:0 0 2
+  5px #ff4fd8; */
 
   animation:floaty 3s ease-in-out infinite;
 }
