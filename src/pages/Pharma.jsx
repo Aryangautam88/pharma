@@ -11,8 +11,8 @@ const cards = [
     image:
       "https://i.pinimg.com/736x/b3/79/7f/b3797f6ff841654fe4f9fbc888eb6f6e.jpg",
     text: `I know maine tumhe bahot hurt kiya... 
-aur uska mujhe sach me regret hai. 
-Tum mere liye bahot special ho ❤️`,
+          aur uska mujhe sach me regret hai.bhot hi jaada 
+          Tum mere liye bahot special ho ❤️`,
   },
 
   {
@@ -21,6 +21,7 @@ Tum mere liye bahot special ho ❤️`,
       "https://i.pinimg.com/originals/6d/0c/03/6d0c035e30176346fbd74663535f704c.gif",
     text: `Mujhe pata hai maine galti ki...
 but I promise main better banunga.
+taaki tujhe ab aange se koi ase ceeje na sehni pade
 Humne jo future plan kiya tha...
 wo sab waise hi hoga 🥺💕`,
   },
@@ -31,6 +32,7 @@ wo sab waise hi hoga 🥺💕`,
       "https://i.pinimg.com/736x/47/4d/a9/474da95baa93a2ebf1e2b318aea209b9.jpg",
     text: `Please gussa mat raho cutie 😭❤️
 Tumhare bina sab boring lagta hai.
+yaar me bhot ase bhooto jaise akela ho jaata hu jaise kisi ne muje store room me band kr diya ho
 Ek baar maaf kardo na...
 warna main officially sad potato ban jaunga 🥔💔`,
   },
@@ -47,6 +49,9 @@ export default function Pharma() {
 
   const [opened, setOpened] =
     useState([]);
+  
+    const [showRoyalPage, setShowRoyalPage] =
+  useState(false);
 
   useEffect(() => {
 
@@ -120,7 +125,7 @@ export default function Pharma() {
 
             <div className="top-images-wrapper">
 
-             <img
+              <img
                 className="top-love-image"
                 src="left.jpeg"
                 alt="love"
@@ -226,7 +231,7 @@ export default function Pharma() {
 
         </div>
 
-      ) : (
+      ) : !showRoyalPage ?  (
 
         <div className="cards-section">
 
@@ -345,21 +350,13 @@ export default function Pharma() {
                 duration: 1,
               }}
             >
-
               <button
 
                 className="next-btn"
 
                 onClick={() => {
 
-                  document
-                    .getElementById(
-                      "love-letter"
-                    )
-                    .scrollIntoView({
-                      behavior:
-                        "smooth",
-                    });
+                  setShowRoyalPage(true);
 
                 }}
               >
@@ -372,88 +369,118 @@ export default function Pharma() {
 
           {/* LOVE LETTER */}
 
-          <div
-            id="love-letter"
-            className="love-letter"
+       </div>
+
+      ) : (
+
+        <div
+          id="royal-letter-page"
+          className="royal-letter-page"
+        >
+
+          <motion.div
+
+            className="royal-card"
+
+            initial={{
+              opacity: 0,
+              scale: 0.8,
+            }}
+
+            animate={{
+              opacity: 1,
+              scale: 1,
+            }}
+
+            transition={{
+              duration: 0.8,
+            }}
           >
 
+            <div className="royal-top-glow"></div>
+
             <img
-              src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
+              src="https://i.pinimg.com/736x/4f/01/b7/4f01b7898c364940aca2d23993fbd26d.jpg"
               alt="love"
-              className="letter-gif"
+              className="royal-image"
             />
 
-            <h1>
+            <h1 className="royal-title">
               To My Favorite Person ❤️
             </h1>
 
             <p>
               Sach bolu...
               mujhe pata hai maine
-              galti ki.
+              bahot badi galti ki.
               Shayad itna hurt kabhi
               nahi karna chahiye tha.
             </p>
 
             <p>
-              But ek cheez kabhi
-              change nahi hogi —
-              meri feelings
-              tumhare liye.
+              Aur jab mujhe sorry bolna
+              chahiye tha...
+              tab bhi main perfect nahi
+              ho paya.
             </p>
 
             <p>
-              Tum meri life ka wo
-              part ho jiske bina sab
-              incomplete lagta hai.
-              Tumhari hasi,
-              tumhari baatein,
-              tumhara gussa bhi 😭❤️
+              But ek cheez kabhi change
+              nahi hogi —
+              meri feelings tere liye.
             </p>
 
             <p>
-              Mujhe bas ek chance
-              chahiye...
-              taaki main tumhe wahi
+              Teri hasi,
+              teri baatein,
+              tera gussa,
+              tera pyaar...
+              sab meri life ka part ban
+              chuka hai 💖
+            </p>
+
+            <p>
+              Mujhe bas ek chance chahiye
+              taaki main tujhe woh
               happiness de saku
-              jo tum deserve karti
-              ho 💖
+              jo tu deserve karti hai ✨
             </p>
 
-            <p className="last-line">
+            <div className="signature">
               I love you the most,
-              Kritika(puchdu) 🌸
-            </p>
+              babu 🌸
+            </div>
 
-          </div>
+            <motion.div
 
-          <motion.div
+              className="final-message"
 
-            className="final-message"
+              initial={{
+                opacity: 0,
+              }}
 
-            initial={{
-              opacity: 0,
-            }}
+              animate={{
+                opacity: 1,
+              }}
 
-            animate={{
-              opacity: 1,
-            }}
+              transition={{
+                delay: 1,
+              }}
+            >
 
-            transition={{
-              delay: 1,
-            }}
-          >
+              <h2>
+                I’m really sorry my
+                love ❤️
+              </h2>
 
-            <h2>
-              I’m really sorry my
-              love ❤️
-            </h2>
+              <p>
+                Please forgive me...
+                You mean everything to
+                me 🥺
+                Like you are everything to me.
+              </p>
 
-            <p>
-              Please forgive me...
-              You mean everything to
-              me 🥺
-            </p>
+            </motion.div>
 
           </motion.div>
 

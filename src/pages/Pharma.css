@@ -322,6 +322,7 @@ html{
 .letter-gif{
   width:180px;
   margin-bottom:20px;
+  border-radius: 20px;
 }
 
 .love-letter h1{
@@ -347,7 +348,7 @@ html{
 /* FINAL MESSAGE */
 
 .final-message{
-  margin-top:80px;
+  /* margin-top:80px; */
   background:rgba(255,255,255,0.08);
   padding:35px;
   border-radius:25px;
@@ -355,12 +356,15 @@ html{
   max-width:700px;
   backdrop-filter:blur(15px);
   box-shadow:0 0 30px rgba(255,0,183,0.25);
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 .final-message h2{
   font-size:3rem;
   font-family:"Great Vibes",cursive;
   margin-bottom:15px;
+   color:#d4008f !important;
 }
 
 .final-message p{
@@ -428,4 +432,134 @@ html{
   box-shadow:0 0 25px #ff4fd8;
 
   animation:floaty 3s ease-in-out infinite;
+}
+
+/* ROYAL PAGE */
+
+.royal-letter-page{
+  min-height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:80px 20px;
+  position:relative;
+}
+
+.royal-card{
+  width:100%;
+  max-width:850px;
+
+  background:linear-gradient(
+    135deg,
+    #ffffff,
+    #fff7fc
+  );
+
+  border-radius:35px;
+
+  padding:20px 25px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.25),
+    0 0 40px rgba(255,255,255,0.3);
+}
+
+.royal-top-glow{
+  position:absolute;
+  top:-120px;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:350px;
+  height:350px;
+
+ 
+
+  opacity:0.35;
+}
+
+.royal-image{
+  width:220px;
+  height:220px;
+
+  object-fit:cover;
+
+  border-radius:30px;
+
+  display:block;
+
+  margin:0 auto 30px;
+
+  
+}
+
+.royal-title{
+  font-size:4rem;
+
+  text-align:center;
+
+  margin-bottom:35px;
+
+  color:#8a0068;
+
+  font-family:"Great Vibes",cursive;
+}
+
+.royal-card p{
+  font-size:1.15rem;
+
+  line-height:2.2;
+
+  color:#5a3a52;
+
+  text-align:center;
+
+  margin-bottom:10px;
+
+  font-weight:500;
+}
+
+.signature{
+  margin-top:40px;
+
+  text-align:center;
+
+  font-size:2rem;
+
+  color:#d4008f;
+
+  font-family:"Great Vibes",cursive;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .royal-card{
+    padding:40px 25px;
+  }
+
+  .royal-title{
+    font-size:2.8rem;
+  }
+
+  .royal-card p{
+    font-size:1rem;
+    line-height:2;
+  }
+
+  .royal-image{
+    width:180px;
+    height:180px;
+  }
+
+  .signature{
+    font-size:1.7rem;
+  }
+
 }
