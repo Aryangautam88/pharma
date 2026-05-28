@@ -1,0 +1,431 @@
+/* Pharma.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Poppins",sans-serif;
+  overflow-x:hidden;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.romantic-container{
+  min-height:100vh;
+  width:100%;
+  background:linear-gradient(
+    135deg,
+    #2a003f,
+    #4a0066,
+    #72008f
+  );
+  position:relative;
+  overflow:hidden;
+  color:white;
+  padding-bottom:100px;
+}
+
+/* GLOW EFFECT */
+
+.glow-circle{
+  position:absolute;
+  width:300px;
+  height:300px;
+  background:#ff00c8;
+  filter:blur(120px);
+  border-radius:50%;
+  z-index:0;
+}
+
+/* FLOATING HEARTS */
+
+.floating-hearts{
+  position:absolute;
+  top:20px;
+  width:100%;
+  text-align:center;
+  font-size:1.5rem;
+  opacity:0.5;
+  animation:floatHearts 6s linear infinite;
+}
+
+@keyframes floatHearts{
+  0%{
+    transform:translateX(-20px);
+  }
+
+  50%{
+    transform:translateX(20px);
+  }
+
+  100%{
+    transform:translateX(-20px);
+  }
+}
+
+/* LOADER SECTION */
+
+.loader-section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  position:relative;
+  padding:20px;
+}
+
+/* HERO */
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.cute-gif{
+  width:140px;
+  margin-bottom:20px;
+  filter:drop-shadow(
+    0 0 20px #ff4fd8
+  );
+
+  animation:floaty 3s ease-in-out infinite;
+}
+
+@keyframes floaty{
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-15px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+.main-title{
+  font-size:4rem;
+  font-family:"Great Vibes",cursive;
+  color:#fff;
+  text-shadow:0 0 20px #ff69d9;
+}
+
+.live-text{
+  margin-top:15px;
+  font-size:1.1rem;
+  color:#ffe1fa;
+}
+
+/* BUTTON */
+
+.cute-btn{
+  margin-top:35px;
+  padding:15px 35px;
+  border:none;
+  border-radius:50px;
+  background:linear-gradient(
+    90deg,
+    #ff00ae,
+    #ff5ce5
+  );
+
+  color:white;
+  font-size:1rem;
+  cursor:pointer;
+  box-shadow:0 0 25px #ff00b7;
+  transition:0.3s;
+}
+
+.cute-btn:hover{
+  transform:scale(1.08);
+}
+
+/* PERCENTAGE */
+
+.percentage{
+  font-size:5rem;
+  margin-top:25px;
+  color:#ff7ce8;
+  text-shadow:0 0 20px #ff00ae;
+}
+
+.progress-bar{
+  width:320px;
+  height:18px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.15);
+  overflow:hidden;
+  margin-top:20px;
+}
+
+.progress-fill{
+  height:100%;
+  background:linear-gradient(
+    90deg,
+    #ff00b7,
+    #ff8df6
+  );
+
+  box-shadow:0 0 20px #ff00ae;
+}
+
+.cute-warning{
+  margin-top:15px;
+  color:#ffd5f7;
+  font-size:0.9rem;
+}
+
+/* CARD SECTION */
+
+.cards-section{
+  min-height:100vh;
+  padding:100px 20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.cards-heading{
+  font-size:4rem;
+  font-family:"Great Vibes",cursive;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.tap-text{
+  color:#ffdff8;
+  margin-bottom:50px;
+}
+
+/* CARDS */
+
+.cards-wrapper{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.romantic-card{
+  width:340px;
+  min-height:450px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:30px;
+  backdrop-filter:blur(15px);
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.4s;
+  box-shadow:0 0 25px rgba(255,0,183,0.25);
+}
+
+.romantic-card:hover{
+  transform:translateY(-10px)
+  scale(1.03);
+}
+
+.closed-card{
+  height:450px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.heart{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.closed-card h2{
+  font-size:1.8rem;
+  margin-bottom:10px;
+}
+
+.opened-card{
+  padding:30px;
+  text-align:center;
+}
+
+.opened-card img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:20px;
+  display:block;
+  margin:0 auto 20px auto;
+  box-shadow:0 0 25px #ff69d9;
+}
+
+.opened-card p{
+  font-size:1.1rem;
+  line-height:2;
+  color:#ffe6fa;
+}
+
+/* NEXT BUTTON */
+
+.next-love-section{
+  margin-top:50px;
+}
+
+.next-btn{
+  padding:15px 35px;
+  border:none;
+  border-radius:50px;
+  background:linear-gradient(
+    90deg,
+    #ff00b7,
+    #ff69d9
+  );
+
+  color:white;
+  font-size:1rem;
+  cursor:pointer;
+  box-shadow:0 0 25px #ff00b7;
+  transition:0.3s;
+}
+
+.next-btn:hover{
+  transform:scale(1.08);
+}
+
+/* LOVE LETTER */
+
+.love-letter{
+  margin-top:90px;
+  width:100%;
+  max-width:850px;
+  background:rgba(255,255,255,0.08);
+  padding:45px;
+  border-radius:30px;
+  backdrop-filter:blur(15px);
+  text-align:center;
+  box-shadow:0 0 30px rgba(255,0,183,0.25);
+}
+
+.letter-gif{
+  width:180px;
+  margin-bottom:20px;
+}
+
+.love-letter h1{
+  font-size:3rem;
+  font-family:"Great Vibes",cursive;
+  margin-bottom:25px;
+}
+
+.love-letter p{
+  font-size:1.1rem;
+  line-height:2;
+  color:#ffe6fa;
+  margin-bottom:20px;
+}
+
+.last-line{
+  margin-top:30px;
+  font-size:1.5rem !important;
+  color:#ffb3ec !important;
+  font-weight:600;
+}
+
+/* FINAL MESSAGE */
+
+.final-message{
+  margin-top:80px;
+  background:rgba(255,255,255,0.08);
+  padding:35px;
+  border-radius:25px;
+  text-align:center;
+  max-width:700px;
+  backdrop-filter:blur(15px);
+  box-shadow:0 0 30px rgba(255,0,183,0.25);
+}
+
+.final-message h2{
+  font-size:3rem;
+  font-family:"Great Vibes",cursive;
+  margin-bottom:15px;
+}
+
+.final-message p{
+  color:#ffe1fa;
+  font-size:1.1rem;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  .main-title{
+    font-size:2.5rem;
+  }
+
+  .cards-heading{
+    font-size:2.8rem;
+  }
+
+  .percentage{
+    font-size:3.5rem;
+  }
+
+  .progress-bar{
+    width:90%;
+  }
+
+  .romantic-card{
+    width:100%;
+    max-width:330px;
+  }
+
+  .love-letter{
+    padding:25px;
+  }
+
+  .love-letter h1{
+    font-size:2.3rem;
+  }
+
+  .final-message h2{
+    font-size:2.2rem;
+  }
+
+  .opened-card p{
+    font-size:1rem;
+  }
+}
+
+.top-images-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:25px; /* gap between images */
+  margin-bottom:25px;
+  flex-wrap:wrap;
+}
+
+.top-images-wrapper img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:25px;
+
+  box-shadow:0 0 25px #ff4fd8;
+
+  animation:floaty 3s ease-in-out infinite;
+}
